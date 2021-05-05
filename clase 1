@@ -1,0 +1,64 @@
+#Solicitar dos numeros e imprimir cual es mayor. 
+""" num_uno = int(input("Ingrese un numero: "))
+num_dos = int(input("Ingrese otro numero: "))
+
+if num_uno > num_dos:    
+    print(f"El numero {num_uno} es mayor que {num_dos} ")
+elif num_uno == num_dos:
+    print(f"El numero {num_uno} es igual que {num_dos} ")
+else:
+    print(f"El numero {num_dos} es mayor que {num_uno} ")
+"""
+
+# Categoria Hombres
+""" Infantil 6 - 9 años
+    Pre-Juvenil = 10 -15 años 
+    Juvenil = 16 -20 años
+    Profesional =  21 -38 años
+"""
+# Categoria Mujeres
+""" Infantil 5 - 9 años
+    Pre-Juvenil = 10 -15 años 
+    Juvenil = 16 -19 años
+    Profesional =  20 - 33 años
+"""
+
+edad = int(input("Ingrese su edad: "))
+genero = input("Ingrese su sexo. M o F")
+
+""" if genero.lower() == "m":
+    if edad>=6 and edad<=9:
+        print("Usted se encuentra en categoria Infantil")
+    elif edad >= 10 and edad <=15:
+        print("Usted se encuentra en categoria Pre-juvenil")
+    elif edad>=16 and edad<=20:
+        print("Usted se encuentra en categoria Juvenil")
+    elif edad>=21 and edad<=38:
+        print("Usted se encuentra en categoria Profesional")
+    else: 
+        print("Su edad no cumple los requisitos para una categoria")
+elif genero.lower() == "f":
+    if edad>=5 and edad<=9:
+        print("Usted se encuentra en categoria Infantil")
+    elif edad >= 10 and edad <=15:
+        print("Usted se encuentra en categoria Pre-juvenil")
+    elif edad>=16 and edad<=19:
+        print("Usted se encuentra en categoria Juvenil")
+    elif edad>=20 and edad<=33:
+        print("Usted se encuentra en categoria Profesional")
+    else: 
+        print("Su edad no cumple los requisitos para una categoria")
+else:
+    print("El valor ingresado no corresponde a lo solicitado")
+"""
+
+if ((edad>=6 and edad<=9) and genero.lower() == "m") or ((edad>=5 and edad<=9) and genero.lower() == "f"):
+    print("Usted se encuentra en categoria Infantil")
+elif (edad >= 10 and edad<=15) and (genero.lower() == "m" or genero.lower() == "f") :
+    print("Usted se encuentra en categoria Pre-juvenil")
+elif ((edad>=16 and edad<=20) and genero.lower() == "m") or ((edad>=16 and edad<=19) and genero.lower() == "f"):
+    print("Usted se encuentra en categoria Juvenil")
+elif edad>=21 and edad<=38:
+    print("Usted se encuentra en categoria Profesional")
+else: 
+    print("Su edad no cumple los requisitos para una categoria")
